@@ -1,6 +1,6 @@
 media:
   input: static/images
-  output: /public/assets/images
+  output: /public/images
 content:
   - name: work
     label: Work
