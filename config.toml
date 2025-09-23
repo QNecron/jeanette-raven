@@ -1,4 +1,4 @@
-baseURL = "https://jeanette-raven.netlify.app"
+baseURL = "/"
 languageCode = 'en-us'
 title = "Jeanette Raven's Portfolio"
 theme = "portfolio"
