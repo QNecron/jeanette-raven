@@ -2,14 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://jeanette-raven.netlify.app/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jeanette-raven.netlify.app/work/2025-09-23-netlify-test/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://jeanette-raven.netlify.app/</loc>
   </url><url>
-    <loc>http://localhost:1313/work/2025-09-23-testing-entry/</loc>
+    <loc>https://jeanette-raven.netlify.app/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/work/</loc>
+    <loc>https://jeanette-raven.netlify.app/work/2025-09-23-testing-entry/</loc>
+  </url><url>
+    <loc>https://jeanette-raven.netlify.app/work/</loc>
   </url>
 </urlset>
