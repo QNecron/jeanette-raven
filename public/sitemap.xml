@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://jeanetteraven.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jeanetteraven.com/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://jeanetteraven.com/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/work/2025-09-23-testing-entry/</loc>
+    <loc>https://jeanetteraven.com/work/2025-09-23-testing-entry/</loc>
   </url><url>
-    <loc>http://localhost:1313/work/</loc>
+    <loc>https://jeanetteraven.com/work/</loc>
   </url>
 </urlset>
