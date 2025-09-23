@@ -1,6 +1,6 @@
 baseURL = "https://jeanette-raven.netlify.app"
 languageCode = 'en-us'
 title = "Jeanette Raven's Portfolio"
-theme = "portolio"
+theme = "portfolio"
 [markup.goldmark.renderer]
   unsafe = true
