@@ -1,0 +1,43 @@
+<section {{ if .Get "id" }}id="{{ .Get "id" }}"{{ end }} class="section" section-theme="{{ .Get "theme" | default "none" }}">
+
+  <div class="section__header" wrapper="{{ .Get "wrapper" | default "structure" }}">
+
+    {{ if or ( .Get "heading" ) ( .Get "copy" ) }}
+    
+      <div class="section__content">
+        
+        {{ if .Get "heading" }}
+          <h2 class="section__title" heading="3">{{ .Get "heading" }}</h2>
+        {{ end }}
+        
+        {{ if .Get "copy" }}
+          <p class="section__copy">{{ .Get "copy" }}</p>
+        {{ end }}
+        
+        {{ if or ( .Get "cta1" ) ( .Get "cta2" ) ( .Get "cta3" ) }}
+          <div class="section__ctas">
+
+            {{ if .Get "cta1" }}
+              <a href="{{ .Get "url1" }}" target="_blank" rel="noopener noreferrer" button="{{ .Get "button1" | default "primary" }}">{{ .Get "cta1" }}</a>
+            {{ end }}
+
+            {{ if .Get "cta2" }}
+              <a href="{{ .Get "url2" }}" target="_blank" rel="noopener noreferrer" button="{{ .Get "button2" | default "primary" }}">{{ .Get "cta2" }}</a>
+            {{ end }}
+            
+            {{ if .Get "cta3" }}
+              <a href="{{ .Get "url3" }}" target="_blank" rel="noopener noreferrer" button="{{ .Get "button3" | default "primary" }}">{{ .Get "cta3" }}</a>
+            {{ end }}
+
+          </div>
+        {{ end }}
+        
+      </div>
+      
+    {{ end }}
+
+    {{ .Inner }}
+    
+  </div>
+
+</section>

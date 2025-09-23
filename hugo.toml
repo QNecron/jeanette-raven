@@ -1,0 +1,6 @@
+baseURL = "https://jeanetteraven.com/"
+languageCode = 'en-us'
+title = "Jeanette Raven's Portfolio"
+theme = "portolio"
+[markup.goldmark.renderer]
+  unsafe = true

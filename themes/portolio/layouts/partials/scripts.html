@@ -1,0 +1,2 @@
+{{ $js := resources.Get "js/resume.js" | minify }}
+<script>{{ $js.Content | safeJS }}</script>

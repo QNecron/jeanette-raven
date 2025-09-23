@@ -1,0 +1,17 @@
+media:
+  input: static/images
+  output: /public/images/
+content:
+  - name: work
+    label: Work
+    type: collection
+    path: 'content/work'
+    view:
+      fields: [ title ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text

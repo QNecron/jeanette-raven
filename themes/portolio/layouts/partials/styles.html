@@ -1,0 +1,2 @@
+{{ $styles := resources.Get "css/resume.css" | minify }}
+<style>{{ $styles.Content | safeCSS }}</style>
