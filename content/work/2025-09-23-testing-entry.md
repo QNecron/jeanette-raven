@@ -1,7 +1,7 @@
 ---
 title: Testing Entry
 ---
-![Testing](/assets/images/jeanette-raven-hero-desktop.webp)
+![](/public/images/jeanette-raven-hero-desktop.webp)
 
 # Jeanette Raven
 
