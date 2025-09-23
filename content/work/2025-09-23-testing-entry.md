@@ -1,8 +1,8 @@
 ---
 title: Testing Entry
 ---
-![](/static/images/jeanette-raven-hero-desktop.webp)
+![Testing](/assets/images/jeanette-raven-hero-desktop.webp)
 
 # Jeanette Raven
 
-This is a test page. We need to see how everything renders.
+This is a test, let's see how it renders.
