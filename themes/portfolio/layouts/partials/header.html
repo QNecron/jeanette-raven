@@ -1,43 +1,42 @@
 <header id="header" class="header" role="banner">
   
-  <nav class="header__nav" aria-label="Primary menu" role="navigation">
-
-    <a href="/" class="header__nav-link" button="icon primary">
-      {{- partial "icons.svg" (
-        dict "icon" "code" "size" "24px" "class" "logo" "label" "Home page") 
-      -}}
-    </a>
+  <div wrapper="structure">
     
-    <button class="header__nav-link" button="icon primary" dialog-show="menu">
-      {{- partial "icons.svg" (
-        dict "icon" "menu" "size" "24px" "class" "menu" "label" "Open primary menu") 
-      -}}
-    </button>
-    
-  </nav>  
-  
-</header>
-
-<dialog class="dialog" dialog="menu">
-
-  <div class="dialog__content">
-  
-    <button class="dialog__close" button="icon secondary" dialog-hide="menu">
-      {{- partial "icons.svg" (
-        dict "icon" "close" "size" "24px" "class" "logo" "label" "Close primary menu") 
-      -}}
-    </button>
-    
-    <ul class="nav">
-    
-      <li class="nav__item">
-        <a href="#introduction" class="nav__link">
-          Introduction
-        </a>
-      </li>
+    <nav aria-label="Primary navigation" role="navigation">
       
-    </ul>
+      <ul class="primary-nav">
+        
+        <li class="primary-nav__item">
+          <a href="/" class="primary-nav__link">
+            <h1 class="primary-nav__site">
+              Jeanette Raven<span class="srt">'s {{ .Title }}</span>
+            </h1>
+          </a>
+        </li>
+        
+        <li class="primary-nav__item">
+          <a href="/work" class="primary-nav__link">Work</a>
+        </li>
+        
+        <li class="primary-nav__item">
+          <a 
+            href="https://drive.google.com/file/d/1yNWCW5_wh_LMCn2LkiDCwMRqn6ddXdsr/view?ts=636bcee4" 
+            class="primary-nav__link" 
+            target="_blank" 
+            rel="noopener"
+          >
+            Resume
+          </a>
+        </li>
+        
+        <li class="primary-nav__item">
+          <a href="/about" class="primary-nav__link">About</a>
+        </li>
+        
+      </ul>
+      
+    </nav>
   
   </div>
   
-</dialog> 
+</header> 

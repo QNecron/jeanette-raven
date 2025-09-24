@@ -1,0 +1,47 @@
+<div class="card" card-type="{{ .Get "type" | default "default" }}">
+  
+  {{ if and ( .Get "img" ) ( .Get "alt" ) }}
+    
+    <div class="card__asset">
+      
+      <img 
+        src="{{ .Get "img" }}" 
+        class="card__asset-img"
+        height="{{ .Get "height" | default "800px" }}" 
+        width="{{ .Get "width"  | default "800px" }}" 
+        alt="{{ .Get "alt" }}" 
+      />
+      
+    </div>
+  
+  {{ end }}
+  
+  <div class="card__content">
+    
+    {{ if ( .Get "heading" ) }}
+      <h2 class="card__heading">
+        {{ .Get "heading" }}
+      </h2>
+    {{ end }}
+    
+    {{ if ( .Get "subheading" ) }}
+      <h3 class="card__subheading">
+        {{ .Get "subheading" }}
+      </h3>
+    {{ end }}    
+    
+    <p class="card__copy">
+      {{ .Get "copy"}}
+    </p>
+    
+    {{ if ( .Get "supporting") }}
+    
+      <p class="card__copy">
+        {{ .Get "supporting" }}
+      </p>
+    
+    {{ end }}
+    
+  </div>
+  
+</div>

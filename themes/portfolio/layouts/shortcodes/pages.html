@@ -1,5 +1,11 @@
-<div id="pages">
-{{ range .Site.RegularPages }}
-  <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-{{ end }}
-</div>
+<ul class="work-pages">
+  
+  {{ range where ( where .Site.RegularPages.ByDate "Type" "work") "File.Dir" "work/" | first 4 }}
+
+    <li class="work-pages__item">
+      <a href="{{ .RelPermalink }}" class="work-pages__link">{{ .LinkTitle }}</a>
+    </li>
+
+  {{ end }}
+
+</ul>
