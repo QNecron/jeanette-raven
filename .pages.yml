@@ -10,7 +10,7 @@ content:
       fields: [ title ]
     fields:
       - name: cover
-        label: Preview image
+        label: Cover Image
         type: image
         description: Image used for home page "Case Studies"
       - name: title
