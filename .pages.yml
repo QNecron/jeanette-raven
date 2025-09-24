@@ -9,6 +9,10 @@ content:
     view:
       fields: [ title ]
     fields:
+      - name: cover
+        label: Preview image
+        type: image
+        description: Image used for home page "Case Studies"
       - name: title
         label: Title
         type: string
