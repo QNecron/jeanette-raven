@@ -14,5 +14,12 @@
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;section id=&#34;about&#34; class=&#34;section&#34; section-theme=&#34;default&#34;&gt;&#xA;&#xA;  &lt;div wrapper=&#34;structure&#34;&gt;&#xA;&#xA;    &#xA;&#xA;&lt;div class=&#34;card&#34; card-type=&#34;horizontal rounded&#34;&gt;&#xA;  &#xA;  &#xA;    &#xA;    &lt;div class=&#34;card__asset&#34;&gt;&#xA;      &#xA;      &lt;img &#xA;        src=&#34;http://localhost:1313/images/jeanette-raven.jpg&#34; &#xA;        class=&#34;card__asset-img&#34;&#xA;        height=&#34;384px&#34; &#xA;        width=&#34;288px&#34; &#xA;        alt=&#34;Jeanette hard at work.&#34; &#xA;      /&gt;&#xA;      &#xA;    &lt;/div&gt;&#xA;  &#xA;  &#xA;  &#xA;  &lt;div class=&#34;card__content&#34;&gt;&#xA;    &#xA;    &#xA;      &lt;h2 class=&#34;card__heading&#34;&gt;&#xA;        Hi, I&amp;#39;m Jeanette&#xA;      &lt;/h2&gt;&#xA;    &#xA;    &#xA;        &#xA;    &#xA;    &lt;p class=&#34;card__copy&#34;&gt;&#xA;      My purpose is to create, connect and inspire. I strive every day to empower people to be the best versions of themselves. I&amp;#39;m passionate about creating human-centered experiences, with a genuine purpose, to make a positive impact on people&amp;#39;s lives. I do this with collaborative, smart, fun, talented people. Let&amp;#39;s make a positive impact, by creating amazing experiences, people want and need.&#xA;    &lt;/p&gt;</description>
     </item>
+    <item>
+      <title>This is a test</title>
+      <link>http://localhost:1313/work/2025-09-24-this-is-a-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/2025-09-24-this-is-a-test/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;  src=&#34;http://localhost:1313/images/jeanette-raven-hero-desktop.webp&#34;&#xA;  alt=&#34;&#34;&#xA;  loading=&#34;lazy&#34;&#xA;/&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
