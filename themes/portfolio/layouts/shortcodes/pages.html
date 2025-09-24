@@ -1,11 +1,65 @@
-<ul class="work-pages">
+<ul 
+  class="grid" 
+  grid-gap="{{ .Get "gap" | default "medium" }}"
+  grid-desktop="{{ .Get "desktop" | default 3 }}"
+  grid-tablet="{{ .Get "tablet" | default 3 }}"
+  grid-mobile="{{ .Get "mobile" | default 1 }}"
+>
+
+  {{- $pages := .Site.RegularPages.ByDate -}}
+
+  {{- if .Get "limit" -}}
   
-  {{ range where ( where .Site.RegularPages.ByDate "Type" "work") "File.Dir" "work/" | first 4 }}
+    {{- range where $pages "Type" "work" | first 4 -}}
+    
+      <li>
+        
+        <div class="card" card-type="overlay dark">
+          
+          <div class="card__asset">
+            <img src="{{ .Params.Cover }}" height="600px" width="800px" alt="" />
+          </div>
+          
+          <div class="card__content">
+            <a href="{{ .RelPermalink }}" class="card__link">
+              <h3 class="card__subheading">
+                {{ .Title }}
+              </h3>
+            </a>
+          </div>
+          
+        </div>
+        
+      </li>
 
-    <li class="work-pages__item">
-      <a href="{{ .RelPermalink }}" class="work-pages__link">{{ .LinkTitle }}</a>
-    </li>
+    {{- end -}}
+  
+  {{- else -}}
+  
+    {{- range where $pages "Type" "work" -}}
+    
+      <li>
+        
+        <div class="card" card-type="overlay dark">
+          
+          <div class="card__asset">
+            <img src="{{ .Params.Cover }}" height="600px" width="800px" alt="" />
+          </div>
+          
+          <div class="card__content">
+            <a href="{{ .RelPermalink }}" class="card__link">
+              <h3 class="card__subheading">
+                {{ .Title }}
+              </h3>
+            </a>
+          </div>
+          
+        </div>
+        
+      </li>
 
-  {{ end }}
-
+    {{- end -}}
+  
+  {{- end -}}
+  
 </ul>

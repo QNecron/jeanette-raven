@@ -15,6 +15,6 @@ description: "Meta Description here."
 
 {{< section >}}
 
-  {{< pages >}}
-  
+  {{< pages desktop="2" tablet="2" mobile="1" >}}
+
 {{</ section >}}
