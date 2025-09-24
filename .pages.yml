@@ -12,7 +12,7 @@ content:
       - name: cover
         label: Cover Image
         type: image
-        description: Image used for home page "Case Studies"
+        description: Image used for home page Case Studies, 800x600px
       - name: title
         label: Title
         type: string
