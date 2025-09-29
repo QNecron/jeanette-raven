@@ -1,0 +1,29 @@
+<section class="opening">
+  
+  {{ if and 
+    ( .Get "heading-start" ) 
+    ( .Get "heading-1" ) 
+    ( .Get "heading-2" ) 
+    ( .Get "heading-3" ) 
+    ( .Get "heading-end" ) 
+  }}
+  
+    <div class="opening__content">
+      
+      <h2 class="opening__heading">
+        <span class="opening__heading-1">
+          <span class="opening__heading-start">{{ .Get "heading-start" }}</span> {{ .Get "heading-1" }}
+        </span>
+        <span class="opening__heading-2">
+          {{ .Get "heading-2" }}
+        </span>
+        <span class="opening__heading-3">
+          {{ .Get "heading-3" }} <span class="opening__heading-end">{{ .Get "heading-end" }}</span>
+        </span>
+      </h2>
+      
+    </div>
+  
+  {{ end }}
+  
+</section>

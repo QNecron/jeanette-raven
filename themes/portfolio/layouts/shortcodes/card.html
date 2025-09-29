@@ -31,15 +31,25 @@
     {{ end }}    
     
     <p class="card__copy">
-      {{ .Get "copy"}}
+      {{ .Get "copy-1"}}
     </p>
     
-    {{ if ( .Get "supporting") }}
-    
+    {{ if ( .Get "copy-2") }}
       <p class="card__copy">
-        {{ .Get "supporting" }}
+        {{ .Get "copy-2" }}
       </p>
+    {{ end }}
     
+    {{ if ( .Get "copy-3" ) }}
+      <p class="card__copy">
+        {{ .Get "copy-3" }}
+      </p>
+    {{ end }}
+    
+    {{ if ( .Get "copy-cta" ) }}
+      <p class="card__cta">
+        {{ .Get "copy-cta" }}
+      </p>
     {{ end }}
     
   </div>
