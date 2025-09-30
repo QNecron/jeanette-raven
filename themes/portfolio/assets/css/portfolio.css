@@ -3,10 +3,10 @@
   src: url("/fonts/sf-pro-display-regular.otf") format("opentype");
 }
 
-/* @font-face {
+@font-face {
   font-family: "Tele Neo";
   src: url("/fonts/tele-neo-extrabold.otf") format("opentype");
-} */
+}
 
 :root {
 
@@ -39,7 +39,7 @@
 
   /* typography */
   --font-sf-pro: "SF Pro", sans-serif;
-  /* --font-tele-neo: "Tele Neo", sans-serif; */
+  --font-tele-neo: "Tele Neo", serif;
   
   --body-font-color: var(--color-white);
   --body-font-family: var(--font-sf-pro);
@@ -93,12 +93,12 @@ a, button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  --heading-font-family: var(--font-sf-pro);
+  --heading-font-family: var(--font-tele-neo);
   --heading-font-size: var(--size-m);
   
   font-family: var(--heading-font-family);
   font-size: var(--heading-font-size);
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h1, h2, h3, h4 {
@@ -241,7 +241,7 @@ body {
   &:after {
     content: "";
     background: var(--color-white);
-    height: 1px;
+    height: 2px;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -474,7 +474,7 @@ body {
   &:after {
     content: "";
     background: var(--card-link-font-color);
-    height: 1px;
+    height: 2px;
     position: absolute;
     right: 0;
     bottom: 0;
