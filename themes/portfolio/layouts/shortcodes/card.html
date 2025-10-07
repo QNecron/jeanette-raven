@@ -1,4 +1,4 @@
-<div class="card" card-type="{{ .Get "type" | default "default" }}">
+<div class="card" card-theme="{{ .Get "theme" | default "default" }}">
   
   {{ if and ( .Get "img" ) ( .Get "alt" ) }}
     

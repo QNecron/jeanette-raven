@@ -8,30 +8,39 @@
 
   {{- $pages := .Site.RegularPages.ByDate -}}
 
-  {{- if .Get "limit" -}}
+  {{- if .Get "home" -}}
   
     {{- range where $pages "Type" "work" | first 4 -}}
     
       <li>
         
-        <div class="card" card-type="overlay dark">
+        <div class="card" card-theme="large overlay">
           
           <div class="card__asset">
-            <img src="{{ .Params.Cover }}" height="600px" width="800px" alt="" />
+            <img src="{{ .Params.Cover }}" height="900px" width="1600px" alt="" />
           </div>
           
           <div class="card__content">
-            <a href="{{ .RelPermalink }}" class="card__link">
-              <h3 class="card__subheading">
-                {{ .Title }}
-              </h3>
-            </a>
+            
+            <h3 class="card__subheading">
+              {{ .Title }}
+            </h3>
+            
+            <div class="card__cta">
+              <a href="{{ .RelPermalink }}" class="card__cta" button="dark invert">
+                View Case Study 
+                <span class="srt">
+                  for {{ .Title }}
+                </span>
+              </a>
+            </div>
+            
           </div>
           
         </div>
         
       </li>
-
+      
     {{- end -}}
   
   {{- else -}}
@@ -40,18 +49,27 @@
     
       <li>
         
-        <div class="card" card-type="overlay dark">
+        <div class="card" card-theme="overlay">
           
           <div class="card__asset">
-            <img src="{{ .Params.Cover }}" height="600px" width="800px" alt="" />
+            <img src="{{ .Params.Cover }}" height="450px" width="800px" alt="" />
           </div>
           
           <div class="card__content">
-            <a href="{{ .RelPermalink }}" class="card__link">
-              <h3 class="card__subheading">
-                {{ .Title }}
-              </h3>
-            </a>
+
+            <h3 class="card__subheading">
+              {{ .Title }}
+            </h3>
+            
+            <div class="card__cta">
+              <a href="{{ .RelPermalink }}" class="card__cta">
+                View Case Study 
+                <span class="srt">
+                  for {{ .Title }}
+                </span>
+              </a>
+            </div>
+            
           </div>
           
         </div>

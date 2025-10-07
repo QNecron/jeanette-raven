@@ -6,7 +6,7 @@ description: "Meta Description here."
 {{< section heading="about me">}}
 
   {{< card
-    type="horizontal rounded"
+    theme="horizontal rounded"
     img="/images/jeanette-raven-logo.webp"
     height="384px"
     width="288px"
