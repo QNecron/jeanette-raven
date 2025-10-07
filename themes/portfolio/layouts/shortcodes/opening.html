@@ -1,26 +1,84 @@
 <section class="opening">
   
   {{ if and 
-    ( .Get "heading-start" ) 
     ( .Get "heading-1" ) 
     ( .Get "heading-2" ) 
-    ( .Get "heading-3" ) 
-    ( .Get "heading-end" ) 
   }}
   
     <div class="opening__content">
       
+      {{ if .Get "img" }}
+        <div class="opening__asset">
+          <img 
+            src="{{ .Get "img" }}" 
+            class="opening__asset-img"
+            height="160px" 
+            width="160px" 
+            aria-hidden="true"
+            alt="Jeanette Raven" 
+          />
+        </div>
+      {{ end }}
+      
       <h2 class="opening__heading">
         <span class="opening__heading-1">
-          <span class="opening__heading-start">{{ .Get "heading-start" }}</span> {{ .Get "heading-1" }}
+          {{ .Get "heading-1" }}
         </span>
         <span class="opening__heading-2">
           {{ .Get "heading-2" }}
         </span>
-        <span class="opening__heading-3">
-          {{ .Get "heading-3" }} <span class="opening__heading-end">{{ .Get "heading-end" }}</span>
-        </span>
       </h2>
+      
+      {{ if .Get "copy" }}
+        <p class="opening__copy">
+          {{ .Get "copy" }}
+        </p>
+      {{ end }}
+      
+    </div>
+  
+  {{ end }}
+  
+  {{ if and 
+    ( .Get "supporting-heading-1" )
+    ( .Get "supporting-heading-2" )
+    ( .Get "supporting-heading-3" )
+  }}
+  
+    <div 
+      class="opening__support grid" 
+      grid-gap="32" 
+      grid-desktop="3" 
+      grid-tablet="3" 
+      grid-mobile="1"
+    >
+      
+      <div class="opening__support-card">
+        <h3 class="opening__support-heading">
+          {{ .Get "supporting-heading-1" }}
+        </h3>
+        <div class="opening__support-copy">
+          {{ .Get "supporting-copy-1" }}
+        </div>
+      </div>
+      
+      <div class="opening__support-card">
+        <h3 class="opening__support-heading">
+          {{ .Get "supporting-heading-2" }}
+        </h3>
+        <div class="opening__support-copy">
+          {{ .Get "supporting-copy-2" }}
+        </div>
+      </div>
+      
+      <div class="opening__support-card">
+        <h3 class="opening__support-heading">
+          {{ .Get "supporting-heading-3" }}
+        </h3>
+        <div class="opening__support-copy">
+          {{ .Get "supporting-copy-3" }}
+        </div>
+      </div>
       
     </div>
   
