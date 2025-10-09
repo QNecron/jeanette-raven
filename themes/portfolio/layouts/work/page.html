@@ -1,82 +1,123 @@
 {{ define "main" }}
 
-  <section class="opening">
-    
-    <div class="opening__content">
-      
-      <h2 class="opening__heading">
-        {{ .Params.Openingtitle }}
-      </h2>
-      
-      <p class="opening__copy">
-        {{ .Params.Openingcopy }}  
-      </p>
-      
-    </div>
-    
-  </Section>
+  {{ if and 
+    ( index .Params "hero-desktop" ) 
+    ( index .Params "hero-mobile" )
+  }}
+    <section class="hero" hero-theme="work">
 
-  <section class="section">
-    
-    <div wrapper="structure">
+      <picture class="hero__asset">
+        
+        <source 
+          srcset="{{ index .Params "hero-desktop" }}"
+          media="(min-width: 768px)"
+          height="1080px"
+          width="1920px"
+        >
+        
+        <img 
+          src="{{ index .Params "hero-mobile" }}" 
+          class="hero__img"
+          height="853px"
+          width="480px"
+          alt="" 
+          aria-hidden="true"
+        />
+        
+      </picture>
       
-      <div
-        class="grid" 
-        grid-gap="32" 
-        grid-desktop="2" 
-        grid-tablet="2" 
-        grid-mobile="1"
-      >
-            
+    </section>
+  {{ end }}
+
+  {{ if and 
+    ( index .Params "opening-title" )
+    ( index .Params "opening-copy" )
+  }}
+    <section class="opening">
+      
+      <div class="opening__content">
+        
+        <h2 class="opening__heading">
+          {{ index .Params "opening-title" }}
+        </h2>
+        
+        <p class="opening__copy">
+          {{ index .Params "opening-copy" }}  
+        </p>
+        
+      </div>
+      
+    </Section>
+  {{ end }}
+
+  {{ if and 
+    ( .Params.Role )
+    ( index .Params "role-team" ) 
+    ( index .Params "role-me" ) 
+    ( index .Params "role-image" )
+  }}
+    <section class="section">
+      
+      <div wrapper="structure">
+        
         <div
-          class="roles grid" 
+          class="grid" 
           grid-gap="32" 
           grid-desktop="2" 
           grid-tablet="2" 
-          grid-mobile="1"        
+          grid-mobile="1"
         >
-        
-          <div class="roles__header">
-            <h3>Team + Role</h3>
-            <p>
-              {{ .Params.Role }}
-            </p>
-          </div>
+              
+          <div
+            class="roles grid" 
+            grid-gap="32" 
+            grid-desktop="2" 
+            grid-tablet="2" 
+            grid-mobile="1"        
+          >
+          
+            <div class="roles__header">
+              <h3>Team + Role</h3>
+              <p>
+                {{ .Params.Role }}
+              </p>
+            </div>
 
-          {{ with .Params.Team }}
-            <ul>
-              {{ range . }}
-                <li>{{ . }}</li>
-              {{ end }}
-            </ul>
-          {{ end }}
+            {{ with index .Params "role-team" }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            
+            {{ with index .Params "role-me" }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            
+          </div>
           
-          {{ with .Params.Me }}
-            <ul>
-              {{ range . }}
-                <li>{{ . }}</li>
-              {{ end }}
-            </ul>
-          {{ end }}
-          
+          <div class="roles__asset">
+            <img 
+              src="{{ index .Params "role-image" }}" 
+              class="roles__asset-img"
+              height="540px" 
+              width="540px" 
+              aria-hidden="true"
+              alt="" 
+            />          
+          </div>
+        
         </div>
         
-        <div class="roles__asset">
-          <img 
-            src="{{ .Params.Highlight }}" 
-            class="roles__asset-img"
-            height="540px" 
-            width="540px" 
-            aria-hidden="true"
-            alt="" 
-          />          
-        </div>
-      
       </div>
       
-    </div>
-    
-  </section>
+    </section>
+  {{ end }}
 
   <section class="section">
     
