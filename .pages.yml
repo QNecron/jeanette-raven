@@ -10,6 +10,13 @@ content:
     view:
       fields: [ title ]
     fields:
+      - name: cover-image
+        label: Cover Image
+        type: image
+        description: Image used on home page post list, 1920x1080
+      - name: title
+        label: Title
+        type: string
       - name: hero-desktop
         label: Hero Desktop Image
         type: image
@@ -18,13 +25,6 @@ content:
         label: Hero Mobile Image
         type: image
         description: Image used for post hero (mobile), 480x853
-      - name: cover-image
-        label: Cover Image
-        type: image
-        description: Image used on home page post list, 1920x1080
-      - name: title
-        label: Title
-        type: string
       - name: opening-title
         label: Opening Title
         type: string
