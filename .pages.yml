@@ -17,6 +17,12 @@ content:
       - name: title
         label: Title
         type: string
+      - name: openingtitle
+        label: Opening Title
+        type: string
+      - name: openingcopy
+        label: Opening Copy
+        type: string
       - name: highlight
         label: Highlight Image
         type: image
