@@ -8,12 +8,20 @@ content:
     path: 'content/work'
     filename: '{primary}.md'
     view:
-      fields: [ title, role ]
+      fields: [ title ]
     fields:
+      - name: hero-desktop
+        label: Hero Desktop Image
+        type: image
+        description: Image used for post hero (desktop), 1920x1080
+      - name: hero-mobile
+        label: Hero Mobile Image
+        type: image
+        description: Image used for post hero (mobile), 480x853
       - name: cover-image
         label: Cover Image
         type: image
-        description: Image used for home page Case Studies, 16:9 ratio
+        description: Image used on home page post list, 1920x1080
       - name: title
         label: Title
         type: string
@@ -26,7 +34,7 @@ content:
       - name: role-image
         label: Role Image
         type: image
-        description: Image adjacent to Team + Role information
+        description: Image adjacent to Team + Role information, 800x800
       - name: role
         label: Role
         type: string
