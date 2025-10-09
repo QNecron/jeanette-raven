@@ -17,7 +17,7 @@
         <div class="card" card-theme="large overlay">
           
           <div class="card__asset">
-            <img src="{{ .Params.Cover }}" height="900px" width="1600px" alt="" />
+            <img src="{{ index .Params "cover-image" }}" height="900px" width="1600px" alt="" />
           </div>
           
           <div class="card__content">
@@ -52,7 +52,7 @@
         <div class="card" card-theme="overlay">
           
           <div class="card__asset">
-            <img src="{{ .Params.Cover }}" height="450px" width="800px" alt="" />
+            <img src="{{ index .Params "cover-image" }}" height="450px" width="800px" alt="" />
           </div>
           
           <div class="card__content">

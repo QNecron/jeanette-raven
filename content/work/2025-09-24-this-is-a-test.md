@@ -1,4 +1,6 @@
 ---
+hero-desktop: /images/jeanette-raven-hero-desktop.webp
+hero-mobile: /images/jeanette-raven-hero-mobile.webp
 cover-image: /images/testing.webp
 title: AI Unlocking the Future
 opening-title: This is the Opening Title.
