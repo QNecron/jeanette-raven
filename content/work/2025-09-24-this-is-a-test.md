@@ -1,14 +1,14 @@
 ---
-cover: /images/testing.webp
+cover-image: /images/testing.webp
 title: AI Unlocking the Future
-openingtitle: This is the Opening Title.
-openingcopy: This is the Opening Copy.
-highlight: /images/jeanette-raven-logo.webp
+opening-title: This is the Opening Title.
+opening-copy: This is the Opening Copy.
+role-image: /images/jeanette-raven-logo.webp
 role: This is the role field.
-team:
+role-team:
   - This is item 1 of team field.
   - This is item 2 of team field.
-me:
+role-me:
   - This is item 1 of me field.
   - This is item 2 of me field.
 ---
