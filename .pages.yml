@@ -8,15 +8,24 @@ content:
     path: 'content/work'
     filename: '{primary}.md'
     view:
-      fields: [ title ]
+      fields: [ title, role ]
     fields:
       - name: cover
         label: Cover Image
         type: image
-        description: Image used for home page Case Studies, 800x600px
+        description: Image used for home page Case Studies, 16:9 ratio
       - name: title
         label: Title
         type: string
+      - name: role
+        label: Role
+        type: string
+      - name: team
+        label: Team
+        type: string
+        list: 
+          min: 1
+          max: 10
       - name: body
         label: Body
         type: rich-text
