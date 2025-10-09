@@ -6,6 +6,7 @@ content:
     label: Work
     type: collection
     path: 'content/work'
+    filename: '{primary}.md'
     view:
       fields: [ title ]
     fields:
