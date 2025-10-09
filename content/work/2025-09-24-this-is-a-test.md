@@ -1,6 +1,8 @@
 ---
 cover: /images/testing.webp
 title: AI Unlocking the Future
+openingtitle: This is the Opening Title.
+openingcopy: This is the Opening Copy.
 highlight: /images/jeanette-raven-logo.webp
 role: This is the role field.
 team:
