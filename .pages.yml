@@ -17,8 +17,8 @@ content:
       - name: title
         label: Title
         type: string
-      - name: role-image
-        label: Role Image
+      - name: highlight
+        label: Highlight Image
         type: image
         description: Image adjacent to Team + Role information
       - name: role
@@ -30,7 +30,7 @@ content:
         list: 
           min: 1
           max: 10
-      - name: my-role
+      - name: me
         label: My Role
         type: string
         list: 
