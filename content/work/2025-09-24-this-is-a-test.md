@@ -1,7 +1,7 @@
 ---
 cover-image: /images/testing.webp
 title: AI Unlocking the Future
-hero-desktop: /images/jeanette-raven-hero-desktop.webp
+hero-desktop: /images/ai-case-study-desktop.webp
 hero-mobile: /images/jeanette-raven-hero-mobile.webp
 opening-title: This is the Opening Title.
 opening-copy: This is the Opening Copy.
