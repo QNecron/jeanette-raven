@@ -29,17 +29,11 @@ role-leadership: Stepped into a new leadership role and brought a large, newly
   rituals, and rebuilt trust—turning parallel efforts into one cohesive
   mission that shipped at the quality and speed the business needed.
 ---
+
+![](/images/testing.webp)
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 ![](/images/testing.webp)
 
-More Content.
-
-![](/images/testing.webp)
-
-More content.
-
-| Heading1 | Heading2 | Heading3 |
-| --- | --- | --- |
-| One | Two | Three |
-| Derp | Herp | Zerp |
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

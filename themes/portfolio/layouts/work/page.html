@@ -29,72 +29,87 @@
     </section>
   {{ end }}
 
-  {{ if and 
-    ( index .Params "opening-title" )
-    ( index .Params "opening-copy" )
-  }}
-    <section class="opening" opening-theme="work">
-      
-      <div class="opening__content">
-        
-        <h2 class="opening__heading">
-          {{ index .Params "opening-title" }}
-        </h2>
-        
-        <p class="opening__copy">
-          {{ index .Params "opening-copy" }}  
-        </p>
-        
-        {{ if and 
-          ( .Params.Role )
-          ( index .Params "role-team" ) 
-          ( index .Params "role-me" ) 
-        }}
-        
-          <div
-            class="roles grid" 
-            grid-gap="32" 
-            grid-desktop="3" 
-            grid-tablet="3" 
-            grid-mobile="1"        
-          >
-            <div class="roles__team">
-              
-              <h3>Team + Role</h3>
-              <p>{{ .Params.Role }}</p>
 
+  <section class="opening" opening-theme="work">
+      
+    <div wrapper="structure">
+      
+      {{ if and 
+        ( index .Params "opening-title" )
+        ( index .Params "opening-copy" )
+      }}
+        
+        <div class="opening__content">
+            
+          <h2 class="opening__heading">
+            {{ index .Params "opening-title" }}
+          </h2>
+            
+          <p class="opening__copy">
+            {{ index .Params "opening-copy" }}  
+          </p>
+            
+        </div>
+
+      {{ end }}
+        
+      <div class="opening__roles">
+          
+        <div
+          class="roles grid" 
+          grid-gap="32" 
+          grid-desktop="3" 
+          grid-tablet="3" 
+          grid-mobile="1"        
+        >
+
+          {{ if and 
+            ( .Params.Role )
+            ( index .Params "role-team" )
+            ( index .Params "role-me" )
+          }}
+            <div class="roles__team">
+                  
+              <h3 class="roles__heading">Team + Role</h3>
+              <p>{{ .Params.Role }}</p>
+              
               <div 
                 class="grid" 
-                grid-gap="32" 
                 grid-desktop="2" 
                 grid-tablet="2" 
                 grid-mobile="1"
               >
-              
                 {{ with index .Params "role-team" }}
-                  <ul>
-                    {{ range . }}
-                      <li>{{ . }}</li>
-                    {{ end }}
-                  </ul>
+                  <div>
+                    <strong>Team:</strong>
+                    <ul>
+                      {{ range . }}
+                        <li>{{ . }}</li>
+                      {{ end }}
+                    </ul>
+                  </div>
                 {{ end }}
-                  
+                        
                 {{ with index .Params "role-me" }}
-                  <ul>
-                    {{ range . }}
-                      <li>{{ . }}</li>
-                    {{ end }}
-                  </ul>
+                  <div>
+                    <strong>My Role:</strong>
+                    <ul>
+                      {{ range . }}
+                        <li>{{ . }}</li>
+                      {{ end }}
+                    </ul>
+                  </div>
                 {{ end }}
-              
               </div>
-                          
+                              
             </div>
+          {{ end }}
 
+          {{ if and ( index .Params "role-opportunity" ) }}
             <div class="roles__opportunity">
-              
-              <h3>Challenge + Opportunity</h3>
-              
+                  
+              <h3 class="roles__heading">Challenge + Opportunity</h3>
+                  
               {{ with index .Params "role-opportunity" }}
                 <ul>
                   {{ range . }}
@@ -104,23 +119,24 @@
               {{ end }}
               
             </div>
-
+          {{ end }}
+          
+          {{ if and ( index .Params "role-leadership" ) }}
             <div class="roles__leadership">
 
-              <h3>Leadership Highlight</h3>
+              <h3 class="roles__heading">Leadership Highlight</h3>
               <p>{{ index .Params "role-leadership" }}</p>
-              
+
             </div>
-            
-            
-          </div>
-        
-        {{ end }}
-        
+          {{ end }}
+              
+        </div>
+          
       </div>
       
-    </Section>
-  {{ end }}
+    </div>
+      
+  </Section>
 
   <section class="section">
     
