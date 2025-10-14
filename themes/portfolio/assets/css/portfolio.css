@@ -146,6 +146,7 @@ h1, h2, h3, h4 {
 body {
   background-color: var(--color-black);
   background-image: url("/images/bg-gradient.svg");
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 112% auto;
   color: var(--body-font-color);
@@ -254,7 +255,19 @@ body {
   [grid-mobile="2"] { --grid-column: span 6; }
 }
 
-/* .header {} */
+.header {
+  --header-background-color: rgba(0,0,0,.48);
+  --header-filter: blur(var(--size-s));
+  --header-padding: var(--size-m) 0;
+  
+  background: var(--header-background-color);
+  border-bottom: solid 1px rgba(255,255,255,.16);
+  backdrop-filter: var(--header-filter);
+  padding: var(--header-padding);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
 
 .footer {
   --footer-margin: var(--size-h);
@@ -422,6 +435,14 @@ body {
 .opening__support-heading {
   font-size: var(--opening-support-heading-font-size);
   font-weight: var(--opening-support-heading-font-weight);
+}
+
+[opening-theme~="work"] {
+  background-color: var(--color-black);
+  background-image: url("/images/bg-gradient.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 112% auto;  
 }
 
 .hero {

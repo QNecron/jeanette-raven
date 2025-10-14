@@ -31,10 +31,6 @@ content:
       - name: opening-copy
         label: Opening Copy
         type: string
-      - name: role-image
-        label: Role Image
-        type: image
-        description: Image adjacent to Team + Role information, 800x800
       - name: role
         label: Role
         type: string
