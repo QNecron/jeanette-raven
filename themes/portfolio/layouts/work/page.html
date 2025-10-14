@@ -45,67 +45,81 @@
           {{ index .Params "opening-copy" }}  
         </p>
         
-      </div>
-      
-    </Section>
-  {{ end }}
-
-  {{ if and 
-    ( .Params.Role )
-    ( index .Params "role-team" ) 
-    ( index .Params "role-me" ) 
-    ( index .Params "role-image" )
-  }}
-    <section class="section">
-      
-      <div wrapper="structure">
+        {{ if and 
+          ( .Params.Role )
+          ( index .Params "role-team" ) 
+          ( index .Params "role-me" ) 
+        }}
         
-        <div
-          class="grid" 
-          grid-gap="32" 
-          grid-desktop="2" 
-          grid-tablet="2" 
-          grid-mobile="1"
-        >
-              
           <div
             class="roles grid" 
             grid-gap="32" 
-            grid-desktop="2" 
-            grid-tablet="2" 
+            grid-desktop="3" 
+            grid-tablet="3" 
             grid-mobile="1"        
           >
-          
-            <div class="roles__header">
+            <div class="roles__team">
+              
               <h3>Team + Role</h3>
-              <p>
-                {{ .Params.Role }}
-              </p>
+              <p>{{ .Params.Role }}</p>
+
+              <div 
+                class="grid" 
+                grid-gap="32" 
+                grid-desktop="2" 
+                grid-tablet="2" 
+                grid-mobile="1"
+              >
+              
+                {{ with index .Params "role-team" }}
+                  <ul>
+                    {{ range . }}
+                      <li>{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+                  
+                {{ with index .Params "role-me" }}
+                  <ul>
+                    {{ range . }}
+                      <li>{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              
+              </div>
+                          
             </div>
 
-            {{ with index .Params "role-team" }}
-              <ul>
-                {{ range . }}
-                  <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-            {{ end }}
+            <div class="roles__opportunity">
+              
+              <h3>Challenge + Opportunity</h3>
+              
+              {{ with index .Params "role-opportunity" }}
+                <ul>
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+              
+            </div>
+
+            <div class="roles__leadership">
+
+              <h3>Leadership Highlight</h3>
+              <p>{{ index .Params "role-leadership" }}</p>
+              
+            </div>
             
-            {{ with index .Params "role-me" }}
-              <ul>
-                {{ range . }}
-                  <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-            {{ end }}
             
           </div>
         
-        </div>
+        {{ end }}
         
       </div>
       
-    </section>
+    </Section>
   {{ end }}
 
   <section class="section">

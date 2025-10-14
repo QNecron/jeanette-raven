@@ -32,7 +32,7 @@ content:
         label: Opening Copy
         type: string
       - name: role
-        label: Role
+        label: Team + Role
         type: string
       - name: role-team
         label: Team
@@ -46,6 +46,15 @@ content:
         list: 
           min: 1
           max: 10
+      - name: role-opportunity
+        label: Challenge + Opportunity
+        type: string
+        list: 
+          min: 1
+          max: 10
+      - name: role-leadership
+        label: Leadership Highlight
+        type: string
       - name: body
         label: Body
         type: rich-text
