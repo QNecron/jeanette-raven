@@ -57,6 +57,8 @@
   /* wrappers */
   --wrapper-content: 768px;
   --wrapper-structure: 1280px;
+  --wrapper-padding-top-bottom: 4dvw;
+  --wrapper-padding-right-left: 4dvw;
 
   /* typography */
   --font-poppins: "Poppins", sans-serif;
@@ -212,8 +214,8 @@ body {
   
   margin-right: auto;
   margin-left: auto;
-  padding-right: 4dvw;
-  padding-left: 4dvw;
+  padding-right: var(--wrapper-padding-right-left);
+  padding-left: var(--wrapper-padding-top-bottom);
   max-width: var(--wrapper-max-width);
 }
 
@@ -353,7 +355,7 @@ body {
 .opening {
   --opening-font-color: inherit;
   --opening-font-weight: normal;
-  --opening-padding: 8vh 0;
+  --opening-padding: var(--size-h) 0 0 0;
   
   --opening-asset-margin: var(--size-h);
   
@@ -366,17 +368,13 @@ body {
   
   --opening-support-border: solid 1px var(--color-white);
   --opening-support-margin: var(--size-h);
-  --opening-support-padding: var(--size-ml) var(--size-l);
+  --opening-support-padding: var(--size-l) 0;
   
   --opening-support-heading-font-size: var(--size-ml);
   --opening-support-heading-font-weight: 700;
   
   --opening-roles-margin: var(--size-h);
   
-  /* align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; */
   padding: var(--opening-padding);
 }
 
@@ -385,7 +383,11 @@ body {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  max-width: var(--opening-content-width);
+  
+  @media screen and (min-width: 768px) {
+    max-width: var(--opening-content-width);
+  }
+  
 }
 
 .opening__asset {
@@ -698,6 +700,19 @@ body {
   
   ~ * {
     margin-top: var(--roles-heading-margin);
+  }
+  
+}
+
+.roles__lists {
+  
+  ul {
+    margin-left: var(--size-ml);
+  }
+  
+  li {
+    margin-top: var(--size-s);
+    list-style: disc;
   }
   
 }

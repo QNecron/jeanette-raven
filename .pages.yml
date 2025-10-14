@@ -17,11 +17,11 @@ content:
       - name: title
         label: Title
         type: string
-      - name: hero-desktop
+      - name: hero-1-desktop
         label: Hero Desktop Image
         type: image
         description: Image used for post hero (desktop), 1920x1080
-      - name: hero-mobile
+      - name: hero-1-mobile
         label: Hero Mobile Image
         type: image
         description: Image used for post hero (mobile), 480x853
@@ -55,6 +55,14 @@ content:
       - name: role-leadership
         label: Leadership Highlight
         type: string
+      - name: hero-2-desktop
+        label: Hero Desktop Image
+        type: image
+        description: Image used for post hero (desktop), 1920x1080
+      - name: hero-2-mobile
+        label: Hero Mobile Image
+        type: image
+        description: Image used for post hero (mobile), 480x853
       - name: body
         label: Body
         type: rich-text

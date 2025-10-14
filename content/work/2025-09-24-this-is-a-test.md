@@ -1,8 +1,8 @@
 ---
 cover-image: /images/testing.webp
 title: AI Unlocking the Future
-hero-desktop: /images/ai-case-study-desktop.webp
-hero-mobile: /images/jeanette-raven-hero-mobile.webp
+hero-1-desktop: /images/ai-case-study-desktop.webp
+hero-1-mobile: /images/jeanette-raven-hero-mobile.webp
 opening-title: Revolutionizing T-Mobile’s Journey with AI
 opening-copy: I led the design of T-Mobile’s first AI-powered, non-linear
   upgrade flow — shaping strategy, guiding design, and delivering an experience

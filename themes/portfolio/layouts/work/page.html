@@ -1,22 +1,22 @@
 {{ define "main" }}
 
   {{ if and 
-    ( index .Params "hero-desktop" ) 
-    ( index .Params "hero-mobile" )
+    ( index .Params "hero-1-desktop" ) 
+    ( index .Params "hero-1-mobile" )
   }}
     <section class="hero" hero-theme="work">
 
       <picture class="hero__asset">
         
         <source 
-          srcset="{{ index .Params "hero-desktop" }}"
+          srcset="{{ index .Params "hero-1-desktop" }}"
           media="(min-width: 768px)"
           height="1080px"
           width="1920px"
         >
         
         <img 
-          src="{{ index .Params "hero-mobile" }}" 
+          src="{{ index .Params "hero-1-mobile" }}" 
           class="hero__img"
           height="853px"
           width="480px"
@@ -28,7 +28,6 @@
       
     </section>
   {{ end }}
-
 
   <section class="opening" opening-theme="work">
       
@@ -80,7 +79,7 @@
                 grid-mobile="1"
               >
                 {{ with index .Params "role-team" }}
-                  <div>
+                  <div class="roles__lists">
                     <strong>Team:</strong>
                     <ul>
                       {{ range . }}
@@ -91,7 +90,7 @@
                 {{ end }}
                         
                 {{ with index .Params "role-me" }}
-                  <div>
+                  <div class="roles__lists">
                     <strong>My Role:</strong>
                     <ul>
                       {{ range . }}
@@ -111,11 +110,13 @@
               <h3 class="roles__heading">Challenge + Opportunity</h3>
                   
               {{ with index .Params "role-opportunity" }}
-                <ul>
-                  {{ range . }}
-                    <li>{{ . }}</li>
-                  {{ end }}
-                </ul>
+                <div class="roles__lists">
+                  <ul>
+                    {{ range . }}
+                      <li>{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                </div>
               {{ end }}
               
             </div>
@@ -133,10 +134,98 @@
         </div>
           
       </div>
-      
+
+      <div 
+        class="opening__support grid" 
+        grid-gap="32" 
+        grid-desktop="3" 
+        grid-tablet="3" 
+        grid-mobile="1"
+      >
+        
+        <div class="opening__support-card">
+          <h3 class="opening__support-heading">
+            Card Heading 1
+          </h3>
+          <div class="opening__support-copy">
+            Card Copy 1
+          </div>
+        </div>
+        
+        <div class="opening__support-card">
+          <h3 class="opening__support-heading">
+            Card Heading 2
+          </h3>
+          <div class="opening__support-copy">
+            Card Copy 2
+          </div>
+        </div>
+        
+        <div class="opening__support-card">
+          <h3 class="opening__support-heading">
+            Card Heading 3
+          </h3>
+          <div class="opening__support-copy">
+            Card Copy 3
+          </div>
+        </div>
+        
+      </div>
+
     </div>
       
-  </Section>
+  </section>
+  
+  <section class="section">
+    
+    <div wrapper="structure">
+
+      <div
+        class="grid" 
+        grid-desktop="2" 
+        grid-tablet="2" 
+        grid-mobile="1"        
+      >
+
+        <div class="card" card-theme="overlay work">
+          
+          <div class="card__asset">
+            Card Image
+          </div>
+          
+          <div class="card__content">
+            <h3 class="card__subheading">
+              Card Subheading
+            </h3>
+            <p class="card__copy">
+              Card Copy
+            </p>
+          </div>
+          
+        </div>
+        
+        <div class="card" card-theme="work">
+          
+          <div class="card__asset">
+            Card Image
+          </div>
+          
+          <div class="card__content">
+            <h3 class="card__subheading">
+              Card Subheading
+            </h3>
+            <p class="card__copy">
+              Card Copy
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+      
+    </div>
+    
+  </section>
 
   <section class="section">
     
@@ -147,5 +236,34 @@
     </div>
     
   </section>
+  
+  {{ if and 
+    ( index .Params "hero-2-desktop" ) 
+    ( index .Params "hero-2-mobile" )
+  }}
+    <section class="hero" hero-theme="work">
+
+      <picture class="hero__asset">
+        
+        <source 
+          srcset="{{ index .Params "hero-2-desktop" }}"
+          media="(min-width: 768px)"
+          height="1080px"
+          width="1920px"
+        >
+        
+        <img 
+          src="{{ index .Params "hero-2-mobile" }}" 
+          class="hero__img"
+          height="853px"
+          width="480px"
+          alt="" 
+          aria-hidden="true"
+        />
+        
+      </picture>
+      
+    </section>
+  {{ end }}
 
 {{ end }}
