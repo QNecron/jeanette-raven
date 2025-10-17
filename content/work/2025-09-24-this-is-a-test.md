@@ -34,10 +34,10 @@ impact-2-title: Record-high NPS
 impact-2-copy: Customer satisfaction in the app
 impact-3-title: Featured by OpenAI
 impact-3-copy: Demoed live on global stage
-2-card-section-title: Our Mission - AI-powered modernization of the customer experience.
-2-card-section-copy: Preventing issues, automating common tasks, and
+2-card-section-title: "Our Mission: AI-powered modernization of the customer experience."
+2-card-section-copy: Preventing issues, automating common tasks, and enhancing
+  journeys so customers choose AI-powered paths over traditional ones.
 ---
-
 ![](/images/testing.webp)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
