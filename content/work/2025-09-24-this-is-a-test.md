@@ -28,6 +28,14 @@ role-leadership: Stepped into a new leadership role and brought a large, newly
   formed team together. I set the framework, created momentum with clear
   rituals, and rebuilt trust—turning parallel efforts into one cohesive
   mission that shipped at the quality and speed the business needed.
+impact-1-title: 70%
+impact-1-copy: AI resolved without human handoff
+impact-2-title: Record-high NPS
+impact-2-copy: Customer satisfaction in the app
+impact-3-title: Featured by OpenAI
+impact-3-copy: Demoed live on global stage
+2-card-section-title: Our Mission - AI-powered modernization of the customer experience.
+2-card-section-copy: Preventing issues, automating common tasks, and
 ---
 
 ![](/images/testing.webp)

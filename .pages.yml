@@ -55,6 +55,30 @@ content:
       - name: role-leadership
         label: Leadership Highlight
         type: string
+      - name: impact-1-title
+        label: Impact Title 1
+        type: string
+      - name: impact-1-copy
+        label: Impact Copy 1
+        type: string
+      - name: impact-2-title
+        label: Impact Title 2
+        type: string
+      - name: impact-2-copy
+        label: Impact Copy 2
+        type: string
+      - name: impact-3-title
+        label: Impact Title 3
+        type: string
+      - name: impact-3-copy
+        label: Impact Copy 3
+        type: string
+      - name: 2-card-section-title
+        label: Section Title
+        type: string
+      - name: 2-card-section-copy
+        label: Section Copy
+        type: string
       - name: hero-2-desktop
         label: Hero Desktop Image
         type: image
