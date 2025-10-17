@@ -14,10 +14,10 @@
     
       <li>
         
-        <div class="card" card-theme="large overlay">
+        <div class="card" card-theme="large overlay rounded">
           
           <div class="card__asset">
-            <img src="{{ index .Params "cover-image" }}" height="900px" width="1600px" alt="" />
+            <img src="{{ index .Params "cover-image" }}" class="card__asset-img" height="900px" width="1600px" alt="" />
           </div>
           
           <div class="card__content">
@@ -49,10 +49,10 @@
     
       <li>
         
-        <div class="card" card-theme="overlay">
+        <div class="card" card-theme="large overlay rounded">
           
           <div class="card__asset">
-            <img src="{{ index .Params "cover-image" }}" height="450px" width="800px" alt="" />
+            <img src="{{ index .Params "cover-image" }}" class="card__asset-img" height="450px" width="800px" alt="" />
           </div>
           
           <div class="card__content">
@@ -62,7 +62,7 @@
             </h3>
             
             <div class="card__cta">
-              <a href="{{ .RelPermalink }}" class="card__cta">
+              <a href="{{ .RelPermalink }}" class="card__cta" button="dark invert">
                 View Case Study 
                 <span class="srt">
                   for {{ .Title }}

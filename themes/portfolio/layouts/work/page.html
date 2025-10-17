@@ -29,6 +29,7 @@
     </section>
   {{ end }}
 
+  <!-- opening++ -->
   <section class="opening" opening-theme="work">
       
     <div wrapper="structure">
@@ -194,58 +195,83 @@
       
   </section>
   
+  <!-- 2 card section -->
   <section class="section">  
     
     <div wrapper="structure">
 
-      <header class="section__header">
-        
-        <h3 class="section__heading">
-          {{ index .Params "2-card-section-title" }}
-        </h3>
-        
-        <p class="section__copy">
-          {{ index .Params "2-card-section-copy" }}
-        </p>
-        
-      </header>
+      {{ if or  
+        ( index .Params "2-card-section-title" )
+        ( index .Params "2-card-section-copy" )
+      }}
+        <header class="section__header">
+          
+          <h3 class="section__heading">
+            {{ index .Params "2-card-section-title" }}
+          </h3>
+          
+          <p class="section__copy">
+            {{ index .Params "2-card-section-copy" }}
+          </p>
+          
+        </header>
+      {{ end }}
       
       <div
         class="grid" 
+        grid-gap="0" 
         grid-desktop="2" 
         grid-tablet="2" 
         grid-mobile="1"        
       >
 
-        <div class="card" card-theme="work">
+        <div class="card" card-theme="overlay work">
           
-          <div class="card__asset">
-            Card Image
-          </div>
+          {{ if index .Params "2-card-1-image" }}
+            <div class="card__asset">
+              <img 
+                src="{{ index .Params "2-card-1-image" }}" 
+                class="card__asset-img"
+                height="800px"
+                width="800px"
+                alt="" 
+                aria-hidden="true"
+              />
+            </div>
+          {{ end }}
           
           <div class="card__content">
-            <h3 class="card__subheading">
-              Card Subheading
+            <h3 class="card__heading">
+              {{ index .Params "2-card-1-title" }}
             </h3>
             <p class="card__copy">
-              Card Copy
+              {{ index .Params "2-card-1-copy" }}
             </p>
           </div>
           
         </div>
         
-        <div class="card" card-theme="work">
+        <div class="card" card-theme="overlay work">
           
-          <div class="card__asset">
-            Card Image
-          </div>
+          {{ if index .Params "2-card-2-image" }}
+            <div class="card__asset">
+              <img 
+                src="{{ index .Params "2-card-2-image" }}" 
+                class="card__asset-img"
+                height="800px"
+                width="800px"
+                alt="" 
+                aria-hidden="true"
+              />
+            </div>
+          {{ end }}
           
           <div class="card__content">
-            <h3 class="card__subheading">
-              Card Subheading
+            <h3 class="card__heading">
+              {{ index .Params "2-card-2-title" }}
             </h3>
             <p class="card__copy">
-              Card Copy
+              {{ index .Params "2-card-2-copy" }}
             </p>
           </div>
           
@@ -257,6 +283,7 @@
     
   </section>
 
+  <!-- content -->
   <section class="section">
     
     <div wrapper="structure">

@@ -2,7 +2,7 @@
 cover-image: /images/testing.webp
 title: AI Unlocking the Future
 hero-1-desktop: /images/ai-case-study-desktop.webp
-hero-1-mobile: /images/jeanette-raven-hero-mobile.webp
+hero-1-mobile: /images/ai-case-study-mobile.webp
 opening-title: Revolutionizing T-Mobile’s Journey with AI
 opening-copy: I led the design of T-Mobile’s first AI-powered, non-linear
   upgrade flow — shaping strategy, guiding design, and delivering an experience
@@ -37,6 +37,14 @@ impact-3-copy: Demoed live on global stage
 2-card-section-title: "Our Mission: AI-powered modernization of the customer experience."
 2-card-section-copy: Preventing issues, automating common tasks, and enhancing
   journeys so customers choose AI-powered paths over traditional ones.
+2-card-1-image: /images/testing-600x800.webp
+2-card-1-title: Transactional guidance
+2-card-1-copy: Using voice AI to provide personal, informed support for upgrades.
+2-card-2-image: /images/testing-600x800.webp
+2-card-2-title: Self-service chat
+2-card-2-copy: Reducing care volume through guided automation of common tasks.
+hero-2-desktop: /images/ai-case-study-desktop.webp
+hero-2-mobile: /images/ai-case-study-mobile.webp
 ---
 ![](/images/testing.webp)
 

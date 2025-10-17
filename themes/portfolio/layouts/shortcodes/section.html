@@ -1,15 +1,17 @@
 <section {{ if .Get "id" }}id="{{ .Get "id" }}"{{ end }} class="section" section-theme="{{ .Get "theme" | default "default" }}">
-
-  {{ if .Get "heading" }}
-    <header class="section__header">
-      <h2 class="section__heading">
-        {{ .Get "heading" }}
-      </h2>
-    </header>
-  {{ end }}
   
   <div wrapper="{{ .Get "wrapper" | default "structure" }}">
+    
+    {{ if .Get "heading" }}
+      <header class="section__header">
+        <h2 class="section__heading">
+          {{ .Get "heading" }}
+        </h2>
+      </header>
+    {{ end }}
+    
     {{ .Inner }}
+    
   </div>
 
 </section>

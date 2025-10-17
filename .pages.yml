@@ -79,6 +79,26 @@ content:
       - name: 2-card-section-copy
         label: Section Copy
         type: string
+      - name: 2-card-1-image
+        label: Card Image 1
+        type: image
+        description: Image used for 2 card layout, 800x800        
+      - name: 2-card-1-title
+        label: Card Title 1
+        type: string
+      - name: 2-card-1-copy
+        label: Card Copy 1
+        type: string
+      - name: 2-card-2-image
+        label: Card Image 2
+        type: image
+        description: Image used for 2 card layout, 800x800         
+      - name: 2-card-2-title
+        label: Card Title 2
+        type: string
+      - name: 2-card-2-copy
+        label: Card Copy 2
+        type: string
       - name: hero-2-desktop
         label: Hero Desktop Image
         type: image
